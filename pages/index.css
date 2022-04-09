@@ -162,6 +162,7 @@
 .places {
   max-width: 984px;
   margin: 0 auto;
+  padding-bottom: 92px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -289,4 +290,95 @@
     font-size: 16px;
     line-height: 26px;
   }
+}
+
+.cover {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1184px;
+}
+
+.cover__link {
+  background: url("../images/cover-trains.jpg") center no-repeat;
+  background-size: cover;
+  text-decoration: none;
+  min-height: 740px;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.cover__link::before {
+  content: "";
+  background-color: #2a2c2f;
+  transition: opacity ease-in-out 0.3s;
+  opacity: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.cover__link:hover::before {
+  transition: opacity ease-in-out 0.3s;
+  opacity: 80%;
+}
+
+.cover__title {
+  z-index: 1;
+  max-width: 560px;
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 900;
+  color: #fff;
+  opacity: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.cover__subtitle {
+  z-index: 1;
+  max-width: 360px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 92px 0 0;
+  margin: 0 auto;
+  max-width: 1184px;
+}
+
+.navigation-list {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  justify-content: start;
+  align-items: center;
+  padding: 0;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity ease-in-out 0.3s;
+}
+
+.footer__link:hover {
+  transition: opacity ease-in-out 0.3s;
+  opacity: 80%;
 }
