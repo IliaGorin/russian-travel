@@ -162,7 +162,7 @@
 .places {
   max-width: 984px;
   margin: 0 auto;
-  padding-bottom: 92px;
+  padding: 92px 0 92px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -188,7 +188,11 @@
     "img paragr";
   column-gap: 40px;
   row-gap: 48px;
-  padding-top: 92px;
+  padding-bottom: 80px;
+}
+
+.place:last-child {
+  padding-bottom: 0;
 }
 
 @media screen and (max-width: 1279px) {
