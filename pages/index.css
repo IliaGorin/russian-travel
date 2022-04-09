@@ -31,6 +31,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -362,7 +363,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 92px 0 0;
+  padding: 92px 0 24px;
   margin: 0 auto;
   max-width: 1184px;
 }
@@ -374,6 +375,7 @@
   justify-content: start;
   align-items: center;
   padding: 0;
+  margin: 0;
 }
 
 .footer__link {
