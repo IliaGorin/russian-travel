@@ -82,13 +82,13 @@
 .lead {
   margin: 0 auto;
   max-width: 984px;
-  padding: 0 148px;
+  padding: 0;
 }
 
 @media screen and (max-width: 1279px) {
   .lead {
     padding: 0 48px;
-    max-width: 928px;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -186,6 +186,15 @@
   min-height: 429px;
 }
 
+@media screen and (max-width: 1279px) {
+  .intro {
+    margin: 0;
+    max-width: 690px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .intro {
     padding-top: 88px;
@@ -257,7 +266,7 @@
 
 @media screen and (max-width: 1279px) {
   .photo-grid {
-    max-width: 928px;
+    max-width: 100%;
     gap: 14px;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -266,7 +275,6 @@
 
 @media screen and (max-width: 1023px) {
   .photo-grid {
-    max-width: 720px;
     gap: 16px;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -304,14 +312,19 @@
 
 @media screen and (max-width: 1279px) {
   .places {
-    max-width: 928px;
-    padding: 88px 0 90px;
+    max-width: 100%;
+    padding: 92px 48px 92px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .places {
+    padding: 88px 24px 90px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .places {
-    max-width: 720px;
     padding: 64px 0 66px;
   }
 }
@@ -336,18 +349,21 @@
 @media screen and (max-width: 1279px) {
   .place {
     grid-template-columns: fit-content(440px) 1fr;
+    column-gap: 32px;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .place {
     grid-template-columns: fit-content(340px) 1fr;
+    column-gap: 28px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .place {
     grid-template-columns: 1fr;
+    row-gap: 32px;
     grid-template-areas:
       "title"
       "url"
@@ -402,6 +418,7 @@
   .place__title {
     font-size: 32px;
     line-height: 35px;
+    padding-left: 16px;
   }
 }
 
@@ -409,8 +426,12 @@
 .place__website {
   grid-area: url;
   align-self: end;
-  /* grid-row-start: 1;
-  grid-column-start: 2; */
+}
+
+@media screen and (max-width: 767px) {
+  .place__website {
+    padding-left: 16px;
+  }
 }
 /* ------------------------------------- */
 .place__url-heading {
@@ -419,6 +440,8 @@
   font-size: 12px;
   line-height: 20.4px;
   letter-spacing: 2px;
+  margin: 0;
+  padding-bottom: 12px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -511,7 +534,7 @@
 
 @media screen and (max-width: 1279px) {
   .cover__link {
-    min-height: calc(100vw / 1.706);
+    min-height: calc(100vw / 1.6);
   }
 }
 
