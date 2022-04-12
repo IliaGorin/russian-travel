@@ -1,4 +1,4 @@
-.place__paragraph_container {
+.place__paragraph-container {
   grid-area: paragr;
   display: flex;
   flex-direction: column;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .place__paragraph_container {
+  .place__paragraph-container {
     padding-left: 16px;
     padding-right: 16px;
   }

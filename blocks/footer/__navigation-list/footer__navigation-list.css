@@ -1,4 +1,4 @@
-.navigation-list {
+.footer__navigation-list {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -10,7 +10,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .navigation-list {
+  .footer__navigation-list {
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
